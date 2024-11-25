@@ -1,0 +1,127 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: monospace;
+}
+body {
+	background-color: #ecf0f1;
+}
+
+.container {
+	max-width: 80%;
+	margin: 0 auto;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+form {
+	width: 70%;
+	display: flex;
+	justify-content: space-between;
+	height: 100px;
+	align-items: center;
+}
+input {
+	width: 60%;
+	height: 60px;
+	font-size: 20px;
+	padding: 15px;
+	border-radius: 15px;
+	border: 1px solid transparent;
+	transition: 0.2s;
+	box-shadow: 0 0 5px rgba(0, 0, 0, 0.496);
+}
+input:hover {
+	border: 1px solid #3498db;
+	transform: scale(1.05);
+
+	box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+button {
+	width: 30%;
+	border: none;
+	border-radius: 15px;
+	height: 60px;
+	background-color: #e74c3c;
+	cursor: pointer;
+	transition: 0.2s;
+	font-size: 20px;
+	color: white;
+	border: 1px solid transparent;
+	box-shadow: 0 0 5px rgba(0, 0, 0, 0.496);
+}
+button:hover {
+	background-color: #d62c1a;
+	transform: scale(1.05);
+	box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3);
+}
+h2 {
+	color: white;
+	font-size: 25px;
+	text-transform: uppercase;
+}
+
+.output {
+	display: flex;
+	background-color: #2c3e50;
+	width: 100%;
+	justify-content: space-between;
+	border-radius: 15px;
+	/* padding: 50px; */
+	box-shadow: 0 0 5px rgba(0, 0, 0, 0.496);
+	flex-wrap: wrap;
+	gap: 30px;
+}
+
+.wether_info {
+	width: 30%;
+	padding-left: 50px;
+	display: flex;
+	flex-direction: column;
+	gap: 20px;
+	justify-content: center;
+	color: white;
+}
+#map {
+	border-radius: 15px;
+	width: 60%;
+	height: 500px;
+	/* margin: 60px 0px; */
+	margin: 10px;
+}
+
+@media (max-width: 768px) {
+	.container {
+		max-width: 100%;
+		padding: 5px;
+		gap: 30px;
+	}
+	.wether_info {
+		width: 100%;
+		margin-top: 20px;
+	}
+	form {
+		flex-direction: column;
+		gap: 15px;
+		height: auto;
+		width: 100%;
+		margin-top: 15px;
+	}
+	#map {
+		width: 100%;
+		margin: 0;
+	}
+	input,
+	button {
+		width: 100%;
+		height: 50px;
+	}
+
+	.output {
+		flex-direction: column;
+		gap: 30px;
+		padding: 10px;
+	}
+}
